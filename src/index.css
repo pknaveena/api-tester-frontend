@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* control height explicitly instead of relying on UA defaults */
+  height: 40px;           /* or use padding to size it */
+  padding: 8px 32px 8px 12px; /* right padding for your custom arrow */
+  line-height: 1.4;
+  box-sizing: border-box;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+
+  /* custom dropdown arrow since appearance:none removes Safari's arrow too */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
