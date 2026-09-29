@@ -8,12 +8,15 @@ import HistoryDetails from './pages/HistoryDetails'
 import Collections from './pages/Collections'
 import CollectionDetails from './pages/CollectionDetails'
 import Environments from './pages/Environments'
+import { Navigate } from 'react-router-dom'
+
 function App() {
   return (
     <BrowserRouter>
 
       <Routes>
 
+        <Route path="/" element={<Navigate to="/login" replace />} />
         <Route
           path="/login"
           element={<Login />}
